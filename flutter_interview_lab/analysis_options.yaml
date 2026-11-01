@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # The workbook tests live outside test/, and they use test-only helpers.
+    invalid_use_of_visible_for_testing_member: ignore
+  exclude:
+    - build/**
+    - android/**
+    - web/**
+    - windows/**
+
+linter:
+  rules:
+    # The lessons print on purpose so that you can watch what happens.
+    avoid_print: false
+    # The workbook comments use <name> as a placeholder.
+    unintended_html_in_doc_comment: false
